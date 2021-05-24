@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Post, Res, UsePipes, ValidationPipe } from "@nestjs/common";
-import { ProductDto } from "../dto/product.dto";
+import { ProductDto, SearchProductDto } from "../dto/product.dto";
 import { ProductService } from "../service/product.service";
 
 
@@ -18,6 +18,11 @@ export class ProductController {
     @Get('get')
     async getProduct(@Res() res) {
         const product = await this.productService.getProduct();
+        return res.status(200).json({ data: product });
+    }
+    @Post('search')
+    async searchProduct(@Res() res, @Body() payload: SearchProductDto) {
+        const product = await this.productService.searchProduct(payload);
         return res.status(200).json({ data: product });
     }
 }

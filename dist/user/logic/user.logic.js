@@ -18,7 +18,12 @@ let UserLogic = class UserLogic {
     }
     async signin(payload) {
         const user = await this.userService.signin(payload);
-        return user;
+        if (payload.password == user.password) {
+            return user;
+        }
+        else {
+            return 'invalid';
+        }
     }
 };
 UserLogic = __decorate([

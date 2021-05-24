@@ -4,5 +4,5 @@ import { UserInterface } from "../model/user.interface";
 export declare class UserLogic {
     private readonly userService;
     constructor(userService: UserService);
-    signin(payload: UserSigninDto): Promise<UserInterface>;
+    signin(payload: UserSigninDto): Promise<UserInterface | string>;
 }

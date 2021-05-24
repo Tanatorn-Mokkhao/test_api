@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProductDto = void 0;
+exports.SearchProductDto = exports.ProductDto = void 0;
 const class_validator_1 = require("class-validator");
 const product_enum_1 = require("../model/product.enum");
 class ProductDto {
@@ -37,4 +37,11 @@ __decorate([
     __metadata("design:type", Object)
 ], ProductDto.prototype, "category", void 0);
 exports.ProductDto = ProductDto;
+class SearchProductDto {
+}
+__decorate([
+    class_validator_1.IsNotEmpty(),
+    __metadata("design:type", String)
+], SearchProductDto.prototype, "name", void 0);
+exports.SearchProductDto = SearchProductDto;
 //# sourceMappingURL=product.dto.js.map

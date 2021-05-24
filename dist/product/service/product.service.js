@@ -28,6 +28,10 @@ let ProductService = class ProductService {
         const product = await this.productModel.find({});
         return product;
     }
+    async searchProduct(payload) {
+        const product = await this.productModel.find({ name: { $regex: '.*' + payload.name + '.*' } });
+        return product;
+    }
 };
 ProductService = __decorate([
     common_1.Injectable(),

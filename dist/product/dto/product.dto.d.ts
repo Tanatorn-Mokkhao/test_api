@@ -7,3 +7,6 @@ export declare class ProductDto {
     readonly status: ProductStatus;
     readonly category: ObjectId;
 }
+export declare class SearchProductDto {
+    name: string;
+}

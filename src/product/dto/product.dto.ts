@@ -22,3 +22,8 @@ export class ProductDto {
     readonly category:ObjectId
 
 }
+
+export class SearchProductDto {
+    @IsNotEmpty()
+    name:string
+}

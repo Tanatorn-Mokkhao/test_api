@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { ProductInterface } from "../model/product.interface";
-import { ProductDto } from "../dto/product.dto";
+import { ProductDto, SearchProductDto } from "../dto/product.dto";
 import { Model } from "mongoose";
 
 
@@ -18,6 +18,10 @@ export class ProductService {
     }
     async getProduct(): Promise<ProductInterface[] | undefined> {
         const product = await this.productModel.find({});
+        return product;
+    }
+    async searchProduct(payload: SearchProductDto): Promise<ProductInterface[] | undefined> {
+        const product = await this.productModel.find({ name: { $regex: '.*' + payload.name + '.*' } });
         return product;
     }
 }

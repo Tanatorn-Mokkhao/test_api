@@ -37,6 +37,11 @@ export class UserController {
     @Post('logic')
     async workLogic(@Res() res, @Body() payload: UserSigninDto) {
         const user = await this.userLogic.signin(payload);
-        return res.status(200).json({ data: user });
+        if (user != 'invalid') {
+            return res.status(200).json({ data: user });
+        }
+        else {
+            return res.status(400).json({ error: "wrong password" });
+        }
     }
 }

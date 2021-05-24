@@ -28,6 +28,10 @@ let ProductController = class ProductController {
         const product = await this.productService.getProduct();
         return res.status(200).json({ data: product });
     }
+    async searchProduct(res, payload) {
+        const product = await this.productService.searchProduct(payload);
+        return res.status(200).json({ data: product });
+    }
 };
 __decorate([
     common_1.Post('create'),
@@ -44,6 +48,13 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], ProductController.prototype, "getProduct", null);
+__decorate([
+    common_1.Post('search'),
+    __param(0, common_1.Res()), __param(1, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, product_dto_1.SearchProductDto]),
+    __metadata("design:returntype", Promise)
+], ProductController.prototype, "searchProduct", null);
 ProductController = __decorate([
     common_1.Controller('Product'),
     __metadata("design:paramtypes", [product_service_1.ProductService])

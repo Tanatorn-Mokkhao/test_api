@@ -26,9 +26,14 @@ export class UserLogic {
     constructor(private readonly userService: UserService) { }
     
 
-    async signin(payload: UserSigninDto):Promise<UserInterface>{
+    async signin(payload: UserSigninDto):Promise<UserInterface | string>{
         const user = await this.userService.signin(payload);
-        return user;
+        if (payload.password == user.password) {
+            return user;
+        }
+        else {
+            return 'invalid';
+        }
     }
 
 }

@@ -17,7 +17,6 @@ export class UserService {
         return add.save();
     }
     async signin(payload: UserSigninDto): Promise<UserInterface> {
-        
         const user = await this.userModel.findOne({ email: payload.email });
         return user;
     }

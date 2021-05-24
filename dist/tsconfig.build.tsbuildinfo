@@ -2202,17 +2202,22 @@
         "affectsGlobalScope": false
       },
       "../src/user/service/user.service.ts": {
-        "version": "25ae46a2d6e3742be740e3119aca4d765669857c8584395aee46efad12fb1ede",
+        "version": "8f6023b1e6f1ce495deea84bb7077c878dc48f69d69a3f2d646f09754af8a398",
         "signature": "79e27734d5e5495122450b876f087c67458e19529a23012cfe7ad9089607a33f",
         "affectsGlobalScope": false
       },
+      "../node_modules/@types/jsonwebtoken/index.d.ts": {
+        "version": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
+        "signature": "f67c920eba6ab8e4558cb9ab661d900188f101c5657e19b1e15829a1d491d46e",
+        "affectsGlobalScope": false
+      },
       "../src/user/logic/user.logic.ts": {
-        "version": "9bb8c338fe9d5d6acc1a004d0bb09a3f29e59ef10abcc0f318eff344b986b262",
-        "signature": "ef7284251910c734c010f2de6be5bd38e2f047570269ea4ae5c28dc85ca04b87",
+        "version": "918299995e22e99f8fbbd3d4a229bab06fcad71a5b770be50ca00cfc80905da0",
+        "signature": "df6f68e0f0d19a358910d2866b5454ba92a041a4b2fc142a62dfb87d872486e8",
         "affectsGlobalScope": false
       },
       "../src/user/controller/user.controller.ts": {
-        "version": "3c68ba563cc2b5d62b71555af2945fa4f38f698c9eeb046c5035a03eacc0ef53",
+        "version": "cd9d80439eb5adeb2997c94826ed356e873bdb7bd3dc24bd33a8d8628fbb16ab",
         "signature": "be930772346862ce20bd24eea7e10ddf32cc311f8218a6965b08851d8aed7e11",
         "affectsGlobalScope": false
       },
@@ -2252,8 +2257,8 @@
         "affectsGlobalScope": false
       },
       "../src/product/dto/product.dto.ts": {
-        "version": "28aea936dd0267e36319aac209fd2e5082608a99107df25f8714044db9a44488",
-        "signature": "4a51f93cf4029533d5858298ea965af32727c7bf0fbf5eb0076a6b3ef87016b9",
+        "version": "27356f95dbeebe23d38af366499d441f65bb0080c6c17a58598c342234b49a85",
+        "signature": "9cca50b453a59f3f7c4222de5c27d8dccb7434da0b9e4fa787ed195706503c79",
         "affectsGlobalScope": false
       },
       "../src/product/model/product.interface.ts": {
@@ -2262,13 +2267,13 @@
         "affectsGlobalScope": false
       },
       "../src/product/service/product.service.ts": {
-        "version": "81235f2bf5ec6c6531633d80115829bb11b92035dcde2e18d75ff63eeba25778",
-        "signature": "d2cd3dd19cd1dc2c83563eaabfc6a55c7003d364ca4f6789b009d9b9631f4934",
+        "version": "3868aed95b7914c2f7f77dcd81739eba13a3145db1cd91967101a084d0ca74d2",
+        "signature": "1294640d4dc1ee995fa7f60ff91075f5b9479c94c5e39220ffb7b7832fc4cad5",
         "affectsGlobalScope": false
       },
       "../src/product/controller/product.controller.ts": {
-        "version": "64756138e16c11b538381de3ec1715cdf4184c7bbf89661abcca332717ead579",
-        "signature": "ad88c622693e73e051db4c22e60659041bee003c6d009acadfa6ac3ae994371e",
+        "version": "7afb93a3a8b81e3f4c055edd8931f1ee1575cdd4ea16f39adacd28519c6c4202",
+        "signature": "d6e81fda89384464f328e6aa54d0c6bfa09bde224c3bc49104cba1da7dcb4f1a",
         "affectsGlobalScope": false
       },
       "../src/product/product.module.ts": {
@@ -3451,6 +3456,9 @@
         "../node_modules/jest-diff/build/index.d.ts",
         "../node_modules/pretty-format/build/index.d.ts"
       ],
+      "../node_modules/@types/jsonwebtoken/index.d.ts": [
+        "../node_modules/@types/node/index.d.ts"
+      ],
       "../node_modules/@types/mongodb/index.d.ts": [
         "../node_modules/@types/bson/index.d.ts",
         "../node_modules/@types/node/events.d.ts",
@@ -4549,6 +4557,7 @@
       ],
       "../src/user/controller/user.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/jsonwebtoken/index.d.ts",
         "../src/user/dto/user.dto.ts",
         "../src/user/logic/user.logic.ts",
         "../src/user/service/user.service.ts"
@@ -5346,6 +5355,9 @@
       "../node_modules/@types/jest/index.d.ts": [
         "../node_modules/jest-diff/build/index.d.ts",
         "../node_modules/pretty-format/build/index.d.ts"
+      ],
+      "../node_modules/@types/jsonwebtoken/index.d.ts": [
+        "../node_modules/@types/node/index.d.ts"
       ],
       "../node_modules/@types/mongodb/index.d.ts": [
         "../node_modules/@types/bson/index.d.ts",
